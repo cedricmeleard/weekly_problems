@@ -2,9 +2,9 @@
 
 Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassidoo/archive) blog posts
 
-From Interview question of the week and week question is: get link to the underlyning blog post
+"From Interview question of the week and week question is:" get link to the underlyning blog post
 
-## Switch pairs
+## Swap pairs
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/youve-got-to-get-up-every-morning-with-a-smile-on/)
 
