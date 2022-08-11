@@ -14,9 +14,9 @@ const theories = [
   { input: 401, expected: 181 },
   { input: 1337, expected: 812 },
   { input: 65536, expected: 36714 },
-  { input: 2097152, expected: 2249189 },
-  { input: 15000000, expected: 16000001 } // will slow down a bit - optimized algorithm goes to 2ms where naive takes 10s
-  //{ input: 1000000000, expected: "Oh! it's way too much 4 me :'(" } // just freeze sadly
+  { input: 2097152, expected: 2249189 }
+  // { input: 15000000, expected: 16000001 } // will slow down a bit - optimized algorithm goes to 2ms where naive takes 10s
+  // { input: 1000000000, expected: "Oh! it's way too much 4 me :'(" } // just freeze sadly
 ];
 
 describe("numberofones - naive way", () => {
