@@ -4,18 +4,10 @@
     {
         public int[] DoSwap(int[] entry)
         {
-            if (entry == null) return new int[] { };
-
-            var result = entry.Clone() as int[];
-            for (var i = 0; i <= result.Length - 2; i += 2)
-            {
-                var temp = (int)result[i];
-                result[i] = result[i + 1];
-                result[i + 1] = temp;
-            }
-
-            return result;
+            var toLinkedList = new LinkedList<int>(entry);
+            return DoSwap(toLinkedList).ToArray();
         }
+
 
         public LinkedList<int> DoSwap(LinkedList<int> entry)
         {
