@@ -1,0 +1,45 @@
+name: run CI test 
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  test_dotnet:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3   
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      working-directory : dotnet/swapPairs
+      run: dotnet restore
+    - name: Build
+      working-directory : dotnet/swapPairs
+      run: dotnet build --no-restore
+    - name: Test
+      working-directory : dotnet/swapPairs/TestSwapPairs
+      run: dotnet test --no-build --verbosity normal
+  test_js:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - name: Install dependencies
+      working-directory: js
+      run: npm ci
+    - name: Run test
+      working-directory: js
+      run: npm test
