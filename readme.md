@@ -18,6 +18,8 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 > []
 ```
 
+Simple implementation in JavaScript and antoher cas in .Net with the use of LinkedList
+
 ## Number of Ones
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/science-is-not-a-boys-game-its-not-a-girls-game/)
