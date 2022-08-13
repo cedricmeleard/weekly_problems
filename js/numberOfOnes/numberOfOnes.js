@@ -1,3 +1,4 @@
+const ONE_NUMBER = "1";
 /**
  * 
  * @param {*} n the number to count the number of 1s in
@@ -10,9 +11,9 @@
  * - reduce the array to a single number
  */
 export function numberOfOnes(n) {
-  return Array.from(Array(n), (_, index) => (index + 1).toString())
-    .filter(number => number.includes("1"))
-    .map(number => countOccurencesOf(number, "1"))
+  return create_filled_array_of_string(n)
+    .filter(number => number.includes(ONE_NUMBER))
+    .map(number => countOccurencesOf(number, ONE_NUMBER))
     .reduce((a, b) => a + b, 0);
 }
 
@@ -28,7 +29,7 @@ export function numberOfOnes_optimized(n) {
 
   for (let i = 1; i <= n; i++) {
     number = i.toString();
-    if (number.includes("1")) numbers += countOccurencesOf(number, "1");
+    if (number.includes(ONE_NUMBER)) numbers += countOccurencesOf(number, ONE_NUMBER);
   }
   return numbers;
 }
@@ -47,4 +48,14 @@ function countOccurencesOf(textEntry, charToCount) {
     }
   }
   return result;
+}
+
+/**
+ * Generate an array of strings of length n filled with numbers from 1 to n
+ * @param {*} arraySize siez of the array to create
+ * @returns an array of strings of size arraySize
+ * Example: create_filled_array_of_string(3) => ["1", "2", "3"]
+ */
+function create_filled_array_of_string(arraySize) {
+  return Array.from(Array(arraySize), (_, index) => (index + 1).toString());
 }
