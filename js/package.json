@@ -1,8 +1,7 @@
 {
-  "name": "numberofones",
+  "name": "interview-problems",
   "version": "1.0.0",
-  "description": "Given an integer n, count the total number of 1 digits appearing in all non-negative integers less than or equal to n",
-  "main": "index.js",
+  "description": "Some interview problems trying to solve",
   "scripts": {
     "test": "jest"
   },
@@ -12,7 +11,7 @@
     "test",
     "fun"
   ],
-  "author": "",
+  "author": "Cédric Méléard",
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.1.3",

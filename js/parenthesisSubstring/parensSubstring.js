@@ -7,8 +7,8 @@ const OPEN_PARENTHESIS = "(";
    */
 export function parensSubstring(s) {
   s = cleanupParameter(s);
-
   if (!s) return 0;
+
   const stack = [...s];
   let completedParenthesisElementCount = 0;
   let currentMax = 0;
