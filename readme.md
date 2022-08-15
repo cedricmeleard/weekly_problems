@@ -4,6 +4,22 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 
 "From Interview question of the week and week question is:" get link to the underlyning blog post
 
+## Parenthesis Substring
+
+["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/friends-and-good-manners-will-carry-you-where/)
+
+> Given a string s consisting of various parenthesis ( and ), find the length of the longest valid parenthesis substring.
+
+Example:
+
+```javascript
+> parensSubstring('(()(')
+> 2
+
+> parensSubstring(')()(()))')
+> 6
+```
+
 ## Swap pairs
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/youve-got-to-get-up-every-morning-with-a-smile-on/)
