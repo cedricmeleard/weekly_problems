@@ -4,6 +4,11 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 
 "From Interview question of the week and week question is:" get link to the underlyning blog post
 
+**How to test**
+
+Problems are done (for now) in JS and some times in C#.
+All files are here with theirs test file to, if you want to run them.
+
 ## Parenthesis Substring
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/friends-and-good-manners-will-carry-you-where/)
@@ -19,6 +24,8 @@ Example:
 > parensSubstring(')()(()))')
 > 6
 ```
+
+code file : [parensSubstring.js](./js/parenthesisSubstring/parensSubstring.js)
 
 ## Swap pairs
 
@@ -36,6 +43,9 @@ Example:
 
 Simple implementation in JavaScript and antoher cas in .Net with the use of LinkedList
 
+JS code file : [swapPairs.js](./js/swapPairs/swapPairs.js)
+C# code file : [SwapPairs.cs](./dotnet/swapPairs/SwapPairs/SwapPairs.cs)
+
 ## Number of Ones
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/science-is-not-a-boys-game-its-not-a-girls-game/)
@@ -48,3 +58,5 @@ Example:
 > numberOfOnes(14)
 > 7 // 1, 10, 11, 12, 13, 14
 ```
+
+code file : [numberOfOnes.js](./js/numberOfOnes/numberOfOnes.js)
