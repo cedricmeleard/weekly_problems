@@ -32,10 +32,13 @@ public class Table
                     text.PadRight(cellLength, text.StartsWith("-") ? '-' : ' '));
             }
 
-            result.Append(newLine.ToString() + "|\r\n");
+            result.Append(newLine.ToString() + $"|{Environment.NewLine}");
         }
 
-        return result.ToString().TrimEnd('\n').TrimEnd('\r');
+        return result
+            .ToString()
+            // berk
+            .TrimEnd('\n').TrimEnd('\r');
     }
 
     public List<Cell> ConvertLine(string line)
