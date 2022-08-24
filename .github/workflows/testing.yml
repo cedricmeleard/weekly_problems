@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test_dotnet:
+  test_dotnet_swap_pairs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3   
@@ -23,6 +23,23 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       working-directory : dotnet/swapPairs/TestSwapPairs
+      run: dotnet test --no-build --verbosity normal
+  test_dotnet_markodwn_tab:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3   
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      working-directory : dotnet/markdownTab
+      run: dotnet restore
+    - name: Build
+      working-directory : dotnet/markdownTab
+      run: dotnet build --no-restore
+    - name: Test
+      working-directory : dotnet/markdownTab/MarkdownTab.Test
       run: dotnet test --no-build --verbosity normal
   test_js:
     runs-on: ubuntu-latest
