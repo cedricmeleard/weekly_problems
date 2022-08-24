@@ -9,6 +9,30 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 Problems are done (for now) in JS and some times in C#.
 All files are here with theirs test file to, if you want to run them.
 
+## Markdown Tab
+
+["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/find-something-youre-passionate-about-and-keep/)
+
+> Given a string that represents a markdown table, return a formatted markdown table. A formatted markdown table means that the width of each column is the width of the longest cell in the column.
+
+Input:
+
+```console
+| Syntax | Description |
+| --- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+```
+
+Output:
+
+```console
+| Syntax    | Description |
+| --------- | ----------- |
+| Header    | Title       |
+| Paragraph | Text        |
+```
+
 ## Parenthesis Substring
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/friends-and-good-manners-will-carry-you-where/)

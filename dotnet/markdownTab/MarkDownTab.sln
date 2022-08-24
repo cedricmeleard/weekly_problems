@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkdownTab", "MarkdownTab\MarkdownTab.csproj", "{DCDDA4EA-7862-450D-87F1-7737125D1D56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkdownTab.Test", "MarkdownTab.Test\MarkdownTab.Test.csproj", "{9881D6E8-44D8-42D0-9F19-41BF473B15D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCDDA4EA-7862-450D-87F1-7737125D1D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDDA4EA-7862-450D-87F1-7737125D1D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDDA4EA-7862-450D-87F1-7737125D1D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDDA4EA-7862-450D-87F1-7737125D1D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9881D6E8-44D8-42D0-9F19-41BF473B15D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9881D6E8-44D8-42D0-9F19-41BF473B15D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9881D6E8-44D8-42D0-9F19-41BF473B15D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9881D6E8-44D8-42D0-9F19-41BF473B15D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
