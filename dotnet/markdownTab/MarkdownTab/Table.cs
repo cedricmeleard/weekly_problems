@@ -32,7 +32,7 @@ public class Table
                     text.PadRight(cellLength, text.StartsWith("-") ? '-' : ' '));
             }
 
-            result.Append(newLine.ToString() + $"|{Environment.NewLine}");
+            result.AppendLine(newLine.ToString() + "|");
         }
 
         return result
