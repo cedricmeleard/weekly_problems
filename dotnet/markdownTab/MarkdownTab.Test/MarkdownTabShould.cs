@@ -9,7 +9,7 @@ public class MarkdownTabShould
 @"| Syntax | Description |
 | --- | ----------- |
 | Header | Title |
-| Paragraph | Text |", 
+| Paragraph | Text |",
 @"| Syntax    | Description |
 | --------- | ----------- |
 | Header    | Title       |
@@ -18,7 +18,7 @@ public class MarkdownTabShould
 @"| Syntax | Description |
 | --- | ----------- |
 | Header | Title |
-| Paragraph      | Text |",    
+| Paragraph      | Text |",
  @"| Syntax    | Description |
 | --------- | ----------- |
 | Header    | Title       |
@@ -26,7 +26,7 @@ public class MarkdownTabShould
     [InlineData(
 @"| Syntax | Description |
 | --- | ----------- |
-| Header | Title |", 
+| Header | Title |",
 @"| Syntax | Description |
 | ------ | ----------- |
 | Header | Title       |")]
