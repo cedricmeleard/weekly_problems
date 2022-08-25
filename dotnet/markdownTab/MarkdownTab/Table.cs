@@ -10,7 +10,7 @@ public class Table
         if (string.IsNullOrEmpty(source.Trim()))
             return new NotATable();
 
-        var lines = source.Split("\r\n");
+        var lines = source.Split($"{Environment.NewLine}");
         _convertedLines = lines.Select(line => ConvertLine(line)).ToList();
 
         return this;
@@ -32,7 +32,7 @@ public class Table
                     text.PadRight(cellLength, text.StartsWith("-") ? '-' : ' '));
             }
 
-            result.Append(newLine.ToString() + $"|\r\n");
+            result.Append(newLine.ToString() + $"|{Environment.NewLine}");
         }
 
         return result
