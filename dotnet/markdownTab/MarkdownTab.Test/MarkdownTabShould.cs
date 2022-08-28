@@ -4,7 +4,8 @@ public class MarkdownTabShould
 {
     [Theory]
     [InlineData("", "")]
-    //[InlineData("blabla", "blabla")]
+    [InlineData("blabla", "blabla")] 
+    [InlineData("| blabla", "| blabla")]
     [InlineData(
 @"| Syntax | Description |
 | --- | ----------- |
@@ -30,6 +31,13 @@ public class MarkdownTabShould
 @"| Syntax | Description |
 | ------ | ----------- |
 | Header | Title       |")]
+    [InlineData(
+@"| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |",
+@"| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |")]
     public void Format_correctly_my_tab(string source, string expected)
     {
         var sut = new Table().

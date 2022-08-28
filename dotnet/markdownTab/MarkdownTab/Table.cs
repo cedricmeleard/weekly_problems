@@ -7,14 +7,15 @@ public class Table
 
     public Table WithSource(string source)
     {
-        if (string.IsNullOrEmpty(source.Trim()))
-            return new NotATable();
+        var tableToParse = source.Trim();
+        if (IsNotATable(tableToParse))
+            return new NotATable(tableToParse);
 
-        var lines = source.Split($"{Environment.NewLine}");
-        _convertedLines = lines.Select(line => ConvertLine(line)).ToList();
+        ConvertLines(tableToParse);
 
         return this;
     }
+
 
     public virtual string PrettyPrint()
     {
@@ -37,17 +38,9 @@ public class Table
 
         return result
             .ToString()
-            // berk
-            .TrimEnd('\n').TrimEnd('\r');
-    }
-
-    public List<Cell> ConvertLine(string line)
-    {
-        return line
-            .Split("|")
-            .Where(p => p.Length > 0)
-            .Select(p => new Cell(p.Trim()))
-            .ToList();
+            // still must remove la EOL
+            .TrimEnd('\n')
+            .TrimEnd('\r');
     }
 
     public List<int> GetMaxValues(IEnumerable<List<Cell>> rows)
@@ -66,7 +59,27 @@ public class Table
                 }
             }
         }
-
         return result;
     }
+    private void ConvertLines(string source)
+    {
+        var lines = source.Split($"{Environment.NewLine}");
+        _convertedLines = lines.Select(line => ConvertLine(line)).ToList();
+    }
+    public List<Cell> ConvertLine(string line)
+    {
+        return line
+            .Split("|")
+            .Where(p => p.Length > 0)
+            .Select(p => new Cell(p.Trim()))
+            .ToList();
+    }
+    private static bool IsNotATable(string tableToParse)
+    {
+        var lines = tableToParse.Split($"{Environment.NewLine}");
+
+        return string.IsNullOrEmpty(tableToParse)
+                    || ! lines.Any(line => line.StartsWith("|") && line.EndsWith("|") );
+    }
+
 }
