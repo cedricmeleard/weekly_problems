@@ -33,6 +33,17 @@ Output:
 | Paragraph | Text        |
 ```
 
+logic code file : [Table.cs](./dotnet/markdownTab/MarkdownTab/Table.cs)
+
+Need refactoring, will return input if not starting and finish with (could much better using a real regex)
+use like this
+
+```csharp
+ var markdownTable = new Table()
+                            .WithSource(source)
+                            .PrettyPrint();
+```
+
 ## Parenthesis Substring
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/friends-and-good-manners-will-carry-you-where/)
