@@ -9,6 +9,27 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 Problems are done (for now) in JS and some times in C#.
 All files are here with theirs test file to, if you want to run them.
 
+## fromTo
+
+["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/if-everything-was-perfect-you-would-never-learn/)
+
+> Given 2 numbers, write a function fromTo that produces a generator, that will produce values in a range.
+ 
+```JavaScript
+let gen = fromTo(5,7)
+
+> gen()
+5
+> gen()
+6
+> gen()
+7
+> gen()
+undefined
+```
+
+code file : [fromTo.js](./js/fromTo/fromTo.js)
+
 ## Markdown Tab
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/find-something-youre-passionate-about-and-keep/)
