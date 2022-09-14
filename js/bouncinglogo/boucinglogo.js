@@ -1,6 +1,7 @@
 const cornerHit = (dimensions, initialCoordinates, screenSize) => {
   let angleLogo = getAngleToTestCollision(initialCoordinates, dimensions);
-  return checkAngleisAligned(angleLogo, screenSize);
+
+  return checkIsOnLineToCorner(angleLogo, screenSize);
 };
 
 /**
@@ -19,7 +20,7 @@ const getAngleToTestCollision = (initialCoordinates, dimensions) => {
  * @param {*} to 
  * @returns 
  */
-const checkAngleisAligned = (from, to) => {
+const checkIsOnLineToCorner = (from, to) => {
   return to[0] - from[0] === to[1] - from[1];
 };
 
