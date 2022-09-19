@@ -16,6 +16,7 @@ All files are here with theirs test file to, if you want to run them.
 > Given a set of letter grades, output the GPA (grade point average) of those grades.
 
 | Letter | grade points |
+| --- | --- |
 | A  | 4    |
 | A- | 3.7  |
 | B+ | 3.3  |
