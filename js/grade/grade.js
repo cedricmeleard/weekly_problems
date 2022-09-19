@@ -14,10 +14,13 @@ const GRADES = {
 };
 
 const calculateGPA = function(studentGrades) {
-  let fixedValue = (studentGrades.reduce(sumReducer, 0) / studentGrades.length).toFixed(1);
-
+  let fixedValue = truncateTo(1)(averageOf(studentGrades));
   return parseFloat(fixedValue);
 };
+
+const truncateTo = decimalCount => value => value.toFixed(decimalCount ?? 1);
+
+const averageOf = grades => grades.reduce(sumReducer, 0) / grades.length;
 
 const sumReducer = (acc, value) => getGradeValue(value) + acc;
 
