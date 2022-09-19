@@ -14,10 +14,13 @@ const GRADES = {
 };
 
 const calculateGPA = function(studentGrades) {
-  let fixedValue = (studentGrades.reduce((acc, value) => parseFloat(GRADES[value]) + acc, 0) /
-    studentGrades.length).toFixed(1);
+  let fixedValue = (studentGrades.reduce(sumReducer, 0) / studentGrades.length).toFixed(1);
 
   return parseFloat(fixedValue);
 };
+
+const sumReducer = (acc, value) => getGradeValue(value) + acc;
+
+const getGradeValue = value => (GRADES[value] ? parseFloat(GRADES[value]) : 0);
 
 export { calculateGPA };
