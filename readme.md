@@ -9,6 +9,43 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 Problems are done (for now) in JS and some times in C#.
 All files are here with theirs test file to, if you want to run them.
 
+## Grade average points
+
+["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/dont-you-ever-ever-give-up-on-you-sheryl-lee-ralph/)
+
+> Given a set of letter grades, output the GPA (grade point average) of those grades.
+
+| Letter | grade points |
+| A  | 4    |
+| A- | 3.7  |
+| B+ | 3.3  |
+| B  | 3    |
+| B- | 2.7  |
+| C+ | 2.3  |
+| C  | 2    |
+| C- | 1.7  |
+| D+ | 1.3  |
+| D  | 1    |
+| D- | 0.7  |
+| F  | 0    |
+
+```JavaScript
+> calculateGPA(['A'])
+4
+
+> calculateGPA(['F', 'F', 'F'])
+0
+
+> calculateGPA(['A', 'A-', 'B+', 'B', 'B-'])
+3.3
+
+> calculateGPA(['A', 'B+', 'C-', 'A'])
+3.3
+```
+
+logic code file : [grade.js](./js/grade/grade.js)
+
+
 ## Boucing Logo
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/i-enjoy-the-time-passing-i-think-its-a-privilege/)
@@ -26,6 +63,12 @@ let screenSize = [100,100]
 > cornerHit(dimensions, [45,70], [400,200])
 > false
 ```
+
+Implementation for multiple event just started, but it seems quite long going futher and no time yet
+
+> TODO FINISH THIS
+
+logic code file : [boucinglogo.js](./js/bouncinglogo/boucinglogo.js)
 
 ## fromTo
 
