@@ -2,7 +2,7 @@ const ordinal = value => {
   // we will only care about last 2 digit
   const twoLastDigitNumber = value % 100;
   // ends with 1 but special case
-  if (twoLastDigitNumber === 11) return value + "th";
+  if ([11, 12, 13].includes(twoLastDigitNumber)) return value + "th";
   // extract last digit
   const lastDigit = twoLastDigitNumber >= 10 ? twoLastDigitNumber % 10 : twoLastDigitNumber;
 
