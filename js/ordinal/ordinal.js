@@ -4,7 +4,7 @@ const ordinal = value => {
   // ends with 1 but special case
   if (reducedNumber === 11) return value + "th";
   // extract last digit
-  const lastDigit = Number(reducedNumber >= 10 ? String(reducedNumber).slice(-1) : reducedNumber);
+  const lastDigit = reducedNumber >= 10 ? reducedNumber % 10 : reducedNumber;
 
   switch (lastDigit) {
     case 1:
