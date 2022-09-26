@@ -21,4 +21,12 @@ describe("ordinal", () => {
     const output = ordinal(theory.input);
     expect(output).toBe(theory.expected);
   });
+
+  test("should throw when 0", () => {
+    expect(() => ordinal(0)).toThrow();
+  });
+
+  test("should throw when lower than 0", () => {
+    expect(() => ordinal(-11)).toThrow();
+  });
 });
