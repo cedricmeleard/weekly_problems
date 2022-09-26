@@ -9,6 +9,22 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 Problems are done (for now) in JS and some times in C#.
 All files are here with theirs test file to, if you want to run them.
 
+## Ordinal 
+
+["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/every-day-brings-new-choices-martha-beck/)
+
+> Write a function to output the ordinal suffix of a positive integer concatenated to an inputted number.
+
+```JavaScript
+> ordinal(3)
+> '3rd'
+
+> ordinal(57)
+> '57th'
+```
+
+logic code file : [ordinal.js](./js/ordinal/ordinal.js)
+
 ## Grade average points
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/dont-you-ever-ever-give-up-on-you-sheryl-lee-ralph/)
