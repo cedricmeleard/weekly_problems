@@ -10,11 +10,12 @@ const theories = [
   { input: 11, expected: "11th" },
   { input: 57, expected: "57th" },
   { input: 111, expected: "111th" },
-  { input: 1111, expected: "1111th" }
+  { input: 1111, expected: "1111th" },
+  { input: 12345672, expected: "12345672nd" }
 ];
 
 describe("ordinal", () => {
-  theoretically("the number {input}\tcontains {expected}\tnumber 1", theories, theory => {
+  theoretically("the ordinal of {input}\tshould be {expected}", theories, theory => {
     const output = ordinal(theory.input);
     expect(output).toBe(theory.expected);
   });

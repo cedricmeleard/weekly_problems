@@ -1,10 +1,10 @@
 const ordinal = value => {
   // we will only care about last 2 digit
-  const reducedNumber = value % 100;
+  const twoLastDigitNumber = value % 100;
   // ends with 1 but special case
-  if (reducedNumber === 11) return value + "th";
+  if (twoLastDigitNumber === 11) return value + "th";
   // extract last digit
-  const lastDigit = reducedNumber >= 10 ? reducedNumber % 10 : reducedNumber;
+  const lastDigit = twoLastDigitNumber >= 10 ? twoLastDigitNumber % 10 : twoLastDigitNumber;
 
   switch (lastDigit) {
     case 1:
