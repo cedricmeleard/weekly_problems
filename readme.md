@@ -23,7 +23,9 @@ All files are here with theirs test file to, if you want to run them.
 > '57th'
 ```
 
-logic code file : [ordinal.js](./js/ordinal/ordinal.js)
+For this one another approch is to use native plurals [Intl.PluralRules link to MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules) 
+witch provide all methods to resolve this problem with **type: ordinal**
+anyway my logic code file : [ordinal.js](./js/ordinal/ordinal.js)
 
 ## Grade average points
 
