@@ -7,14 +7,13 @@ const fibonacci = (first, second, number) => {
 
 const isFibonacci = suite => {
   if (suite.length < 3) return true;
-
   const [beforebeforeLast, beforeLast, last] = suite.slice(-3);
-  if (!checkSumIsFibonacciCompatible()) return false;
-
-  return isFibonacci(suite.slice(-1));
 
   function checkSumIsFibonacciCompatible() {
     return beforebeforeLast + beforeLast === last;
   }
+
+  if (!checkSumIsFibonacciCompatible()) return false;
+  return isFibonacci(suite.slice(-1));
 };
 export { fibonacci, isFibonacci };
