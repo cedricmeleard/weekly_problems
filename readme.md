@@ -25,7 +25,7 @@ let n = 5
 > [3, 7, 10, 17, 27]
 ```
 
-anyway my logic code file : [fibonacci.js](./js/fibonacci_like/fibonacci.js)
+logic code file : [fibonacci.js](./js/fibonacci_like/fibonacci.js)
 
 ## Ordinal
 
