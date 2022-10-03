@@ -5,7 +5,6 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 "From Interview question of the week and week question is:" get link to the underlyning blog post
 
 **How to test**
-
 Problems are done (for now) in JS and some times in C#.
 All files are here with theirs test file to, if you want to run them.
 
@@ -25,9 +24,10 @@ let n = 5
 > fibLike(3, 7, n)
 > [3, 7, 10, 17, 27]
 ```
+
 anyway my logic code file : [ordinal.js](./js/fibonacci_like/fibonacci.js)
 
-## Ordinal 
+## Ordinal
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/every-day-brings-new-choices-martha-beck/)
 
@@ -41,7 +41,7 @@ anyway my logic code file : [ordinal.js](./js/fibonacci_like/fibonacci.js)
 > '57th'
 ```
 
-For this one another approch is to use native plurals [Intl.PluralRules link to MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules) 
+For this one another approch is to use native plurals [Intl.PluralRules link to MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules)
 witch provide all methods to resolve this problem with **type: ordinal**
 anyway my logic code file : [ordinal.js](./js/ordinal/ordinal.js)
 
@@ -82,7 +82,6 @@ anyway my logic code file : [ordinal.js](./js/ordinal/ordinal.js)
 
 logic code file : [grade.js](./js/grade/grade.js)
 
-
 ## Boucing Logo
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/i-enjoy-the-time-passing-i-think-its-a-privilege/)
@@ -112,7 +111,7 @@ logic code file : [boucinglogo.js](./js/bouncinglogo/boucinglogo.js)
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/if-everything-was-perfect-you-would-never-learn/)
 
 > Given 2 numbers, write a function fromTo that produces a generator, that will produce values in a range.
- 
+
 ```JavaScript
 let gen = fromTo(5,7)
 

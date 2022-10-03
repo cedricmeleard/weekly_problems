@@ -1,11 +1,17 @@
+import theoretically from "jest-theories";
 import { fibonacci } from "./fibonacci";
 
-describe("testing fibonacci like", () => {
-  test("with 10,20 and 5 should return [10, 20, 30, 50, 80]", () => {
-    expect(fibonacci(10, 20, 5)).toEqual([10, 20, 30, 50, 80]);
-  });
+const theories = [
+  { input: [3, 7, -1], expected: [] },
+  { input: [3, 7, 1], expected: [3] },
+  { input: [3, 7, 2], expected: [3, 7] },
+  { input: [3, 7, 5], expected: [3, 7, 10, 17, 27] },
+  { input: [10, 20, 5], expected: [10, 20, 30, 50, 80] }
+];
 
-  test("with 3,7 and 5 should return [3, 7, 10, 17, 27]", () => {
-    expect(fibonacci(3, 7, 5)).toEqual([3, 7, 10, 17, 27]);
+describe("fibonacci should", () => {
+  theoretically("the ordinal of {input}\tshould be {expected}", theories, theory => {
+    const output = fibonacci(theory.input[0], theory.input[1], theory.input[2]);
+    expect(output).toEqual(theory.expected);
   });
 });
