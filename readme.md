@@ -9,6 +9,24 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 Problems are done (for now) in JS and some times in C#.
 All files are here with theirs test file to, if you want to run them.
 
+## Fibonacci like suite
+
+["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/hope-is-a-gift-you-dont-have-to-surrender-a-power/)
+
+> Given two integers, generate a “fibonacci-like” sequence of n digits (where the next number in the pattern is the sum of the previous two numbers)
+Extra credit: Given a sequence, determine if the sequence is “fibonacci-like”.
+
+```javascript
+let n = 5
+
+> fibLike(10, 20, n)
+> [10, 20, 30, 50, 80]
+
+> fibLike(3, 7, n)
+> [3, 7, 10, 17, 27]
+```
+anyway my logic code file : [ordinal.js](./js/fibonacci_like/fibonacci.js)
+
 ## Ordinal 
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/every-day-brings-new-choices-martha-beck/)
