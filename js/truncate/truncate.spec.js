@@ -1,6 +1,6 @@
 import { truncate, _truncate } from "./truncate";
 
-describe("truncate test should, no regex", () => {
+describe("truncate with no regex test should", () => {
   test("return 'nev gon giv you up' when passing 'never gonna give you up' and 3", () => {
     expect(truncate("never gonna give you up", 3, 3)).toBe("nev gon giv you up");
   });
@@ -26,7 +26,7 @@ describe("truncate test should, no regex", () => {
   });
 });
 
-describe("truncate with the use of regex test should", () => {
+describe("truncate with regex test should", () => {
   test("return 'nev gon giv you up' when passing 'never gonna give you up' and 3", () => {
     expect(_truncate("never gonna give you up", 3, 3)).toBe("nev gon giv you up");
   });

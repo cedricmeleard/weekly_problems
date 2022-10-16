@@ -3,21 +3,23 @@ const _truncate = (input, sizeToTruncate) => {
 };
 
 const truncate = (input, sizeToTruncate) => {
-  let counter = 0;
-  const NOTHING = "";
-  const isNotALetter = char => char.toLowerCase() === char.toUpperCase();
-  const isUnderTheSizeToTruncate = () => counter < sizeToTruncate;
+  let consecutiveLetterCount = 0;
+  const EMPTY = "";
 
-  return input
-    .split("")
-    .map(char => {
-      if (isNotALetter(char)) counter = 0;
-      else if (isUnderTheSizeToTruncate()) counter++;
-      else char = NOTHING; //not adding when over size limit
+  return [...input].reduce(
+    (result, current) => (result += isALetter(current) && isOverTheSizeToTruncate() ? EMPTY : current),
+    EMPTY
+  );
 
-      return char;
-    })
-    .join("");
+  function isALetter(charToTest) {
+    const isALetter = charToTest.toLowerCase() !== charToTest.toUpperCase();
+    if (!isALetter) consecutiveLetterCount = 0;
+    return isALetter;
+  }
+  function isOverTheSizeToTruncate() {
+    consecutiveLetterCount++;
+    return consecutiveLetterCount > sizeToTruncate;
+  }
 };
 
 export { truncate, _truncate };
