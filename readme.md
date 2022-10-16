@@ -8,6 +8,25 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 Problems are done (for now) in JS and some times in C#.
 All files are here with theirs test file to, if you want to run them.
 
+## Trauncate words
+
+["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/)
+
+> Write a function that truncates words in a string to length n
+
+```javascript
+let n = 3
+
+truncate('never gonna give you up', n)
+> 'nev gon giv you up'
+
+truncate('*hello* darkness, my ~old_friend', n)
+> '*hel* dar, my ~old_fri'
+```
+
+logic code file : [truncate.js](./js/truncate/truncate.js)
+
+
 ## Fibonacci like suite
 
 ["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/hope-is-a-gift-you-dont-have-to-surrender-a-power/)
