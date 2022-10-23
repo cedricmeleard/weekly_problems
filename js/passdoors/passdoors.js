@@ -13,10 +13,14 @@ export default function passDoors(numberOfDoors, numberOfPasses) {
   }
 
   function toggleDoors(tab, currentPass) {
-    return tab.map((cell, index) => (candidateForCurrentPass(index, currentPass) ? toggle(cell) : cell));
+    return tab.map((cell, index) => doPassDoors(cell, index, currentPass));
   }
 
-  function candidateForCurrentPass(index, currentPass) {
+  function doPassDoors(cell, index, currentPass) {
+    return candidateForCurrentPass(currentPass, index) ? toggle(cell) : cell;
+  }
+
+  function candidateForCurrentPass(currentPass, index) {
     return (index + 1) % currentPass === 0;
   }
 
