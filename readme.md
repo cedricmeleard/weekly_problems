@@ -12,7 +12,7 @@ All files are here with theirs test file to, if you want to run them.
 
 > Given a positive integer n, return all of its anti-divisors. Anti-divisors are numbers that do not divide a number by the largest possible margin (1 is not an anti-divisor of any number).
 
-[The Anti-Divisor](https://oeis.org/A066272/a066272a.html)
+More information concerning [The Anti-Divisor here](https://oeis.org/A066272/a066272a.html)
 
 Example:
 
