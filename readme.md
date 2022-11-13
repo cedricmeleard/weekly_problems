@@ -8,9 +8,34 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 Problems are done (for now) in JS and some times in C#.
 All files are here with theirs test file to, if you want to run them.
 
-## passDoors
+## anti divisor
 
-["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/)
+> Given a positive integer n, return all of its anti-divisors. Anti-divisors are numbers that do not divide a number by the largest possible margin (1 is not an anti-divisor of any number).
+
+[The Anti-Divisor](https://oeis.org/A066272/a066272a.html)
+
+Example:
+
+```javascript
+> antidivisor(1)
+> []
+
+> antidivisor(3)
+> [2]
+
+> antidivisor(5)
+> [2,3]
+
+> antidivisor(10)
+> [3,4,7]
+
+> antidivisor(234)
+> [4,7,12,36,52,67,156]
+```
+
+logic code file : [antidivisor.js](./js/antidivisor/antidivisor.js)
+
+## passDoors
 
 > Let’s say you have n doors that start out as closed. With the first pass across the doors, you toggle every door open. With the second pass, you toggle every second door. With the third, every third door, and so on. Write a function that takes in an integer numberOfPasses, and returns how many doors are open after the number of passes. Thanks Max for inspiring this question!
 
@@ -33,8 +58,6 @@ logic code file : [passdoors.js](./js/passdoors/passdoors.js)
 
 ## Trauncate words
 
-["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/)
-
 > Write a function that truncates words in a string to length n
 
 ```javascript
@@ -50,8 +73,6 @@ truncate('*hello* darkness, my ~old_friend', n)
 logic code file : [truncate.js](./js/truncate/truncate.js)
 
 ## Fibonacci like suite
-
-["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/hope-is-a-gift-you-dont-have-to-surrender-a-power/)
 
 > Given two integers, generate a “fibonacci-like” sequence of n digits (where the next number in the pattern is the sum of the previous two numbers)
 Extra credit: Given a sequence, determine if the sequence is “fibonacci-like”.
@@ -70,8 +91,6 @@ logic code file : [fibonacci.js](./js/fibonacci_like/fibonacci.js)
 
 ## Ordinal
 
-["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/every-day-brings-new-choices-martha-beck/)
-
 > Write a function to output the ordinal suffix of a positive integer concatenated to an inputted number.
 
 ```JavaScript
@@ -87,8 +106,6 @@ witch provide all methods to resolve this problem with **type: ordinal**
 anyway my logic code file : [ordinal.js](./js/ordinal/ordinal.js)
 
 ## Grade average points
-
-["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/dont-you-ever-ever-give-up-on-you-sheryl-lee-ralph/)
 
 > Given a set of letter grades, output the GPA (grade point average) of those grades.
 
@@ -125,8 +142,6 @@ logic code file : [grade.js](./js/grade/grade.js)
 
 ## Boucing Logo
 
-["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/i-enjoy-the-time-passing-i-think-its-a-privilege/)
-
 > Remember the bouncing DVD logo? Given the dimensions of the logo, its initial coordinates, and the size of a screen, write a function that will determine if its next collision will hit the corner of the screen. Assume it is initially moving southeast with a slope of -1. Extra credit, figure out how many bounces/collisions it will take to hit a corner!
 
 ```JavaScript
@@ -149,8 +164,6 @@ logic code file : [boucinglogo.js](./js/bouncinglogo/boucinglogo.js)
 
 ## fromTo
 
-["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/if-everything-was-perfect-you-would-never-learn/)
-
 > Given 2 numbers, write a function fromTo that produces a generator, that will produce values in a range.
 
 ```JavaScript
@@ -169,8 +182,6 @@ undefined
 code file : [fromTo.js](./js/fromTo/fromTo.js)
 
 ## Markdown Tab
-
-["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/find-something-youre-passionate-about-and-keep/)
 
 > Given a string that represents a markdown table, return a formatted markdown table. A formatted markdown table means that the width of each column is the width of the longest cell in the column.
 
@@ -205,8 +216,6 @@ use like this
 
 ## Parenthesis Substring
 
-["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/friends-and-good-manners-will-carry-you-where/)
-
 > Given a string s consisting of various parenthesis ( and ), find the length of the longest valid parenthesis substring.
 
 Example:
@@ -222,8 +231,6 @@ Example:
 code file : [parensSubstring.js](./js/parenthesisSubstring/parensSubstring.js)
 
 ## Swap pairs
-
-["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/youve-got-to-get-up-every-morning-with-a-smile-on/)
 
 > Given a list, swap every two adjacent nodes. Something to think about: How would your code change if this were a linked list, versus an array?
 
@@ -241,8 +248,6 @@ JS code file : [swapPairs.js](./js/swapPairs/swapPairs.js)
 C# code file : [SwapPairs.cs](./dotnet/swapPairs/SwapPairs/SwapPairs.cs)
 
 ## Number of Ones
-
-["From Interview question of the week and week question is:"](https://buttondown.email/cassidoo/archive/science-is-not-a-boys-game-its-not-a-girls-game/)
 
 > Given an integer n, count the total number of 1 digits appearing in all non-negative integers less than or equal to n.
 
