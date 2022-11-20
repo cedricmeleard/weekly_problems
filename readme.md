@@ -8,6 +8,23 @@ Weekly problems from ["rendezvous with cassidoo"](https://buttondown.email/cassi
 Problems are done (for now) in JS and some times in C#.
 All files are here with theirs test file to, if you want to run them.
 
+## Combined String
+
+> Given a list of strings arr, and a max size n, return a new list where the strings (from left to right) are joined together with a space, so that each new string is less than or equal to the max size.
+
+Examples:
+
+```javascript
+> combineStrings(["a", "b", "c", "d", "e", "f", "g"], 5)
+> ["a b c", "d e f", "g"]
+
+> combineStrings(["a", "b", "c", "d", "e", "f", "g"], 12)
+> ["a b c d e f", "g"]
+
+> combineStrings(["alpha", "beta", "gamma", "delta", "epsilon"], 20)
+> ["alpha beta gamma", "delta epsilon"]
+```
+
 ## anti divisor
 
 > Given a positive integer n, return all of its anti-divisors. Anti-divisors are numbers that do not divide a number by the largest possible margin (1 is not an anti-divisor of any number).
