@@ -1,18 +1,17 @@
 const combineStrings = (inputStrings, size) => {
-  let result = [],
-    current = "";
-  if (size <= 0) return result;
+  if (size <= 0) return [];
 
+  let result = [""];
   inputStrings.filter(p => p.length <= size).forEach(element => {
+    let current = result[result.length - 1];
     if (hasEnoughPlace(current, size, element)) {
-      current = appendToString(current, element);
+      result[result.length - 1] = appendToString(current, element);
       return;
     }
 
-    result.push(current);
-    current = element;
+    result.push(element);
   });
-  if (current) result.push(current);
+
   return result.filter(p => p);
 };
 
